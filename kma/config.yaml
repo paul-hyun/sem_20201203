@@ -1,0 +1,22 @@
+'data':
+  'data_file': 'OBS_ASOS_MNH_20201123233109.csv'
+  'train_start': '1904-04-01'
+  'train_end': '2009-12-31'
+  'test_start': '2010-01-01'
+  'test_end': '2020-10-31'
+  'x_locations': []  # 119 수원
+  'y_location': 119
+  'x_cols': ['평균기온(°C)', '최고기온(°C)', '최저기온(°C)', '평균현지기압(hPa)', '평균해면기압(hPa)', '평균수증기압(hPa)', '평균이슬점온도(°C)', '평균상대습도(%)', '월합강수량(00~24h만)(mm)', '평균풍속(m/s)', '평균운량(1/10)', '일조율(%)']
+  'y_col': '평균기온(°C)'
+  'x_items': ['지점', '월']
+  'x_seq': 24
+  'y_seq': 24
+'model':
+  'name': 'base_lstm'
+  'lstm1_unit': 64
+  'lstm2_unit': 64
+  'lstm3_unit': 64
+  'd_item': 4
+  'dropout': 0.4
+'optimizer':
+  'learning_rate': 5.e-4
